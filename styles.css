@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove scroll bars */
+    background-color: #4b0082; /* Dark Purple Background */
+}
+
+.dark-mode {
+    color: #fff;
+}
+
+header {
+    background-color: #8e44ad; /* Purple Color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Added border-radius for a rounded appearance */
+    max-width: 300px; /* Adjusted width */
+    margin: 20px auto;
+    position: relative;
+    z-index: 2; /* Ensure header is above particles */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1::before {
+    content: "⚡";
+    margin-right: 10px;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+section {
+    max-width: 300px; /* Adjusted width */
+    margin: 15px auto; /* Adjusted margin for the RSVP box */
+    padding: 15px;
+    border: 1px solid #555;
+    background-color: #ff8210; /* Orange Color */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px; /* Added border-radius for a rounded appearance */
+    position: relative;
+    z-index: 1; /* Ensure sections are above particles */
+}
+
+section i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 3px; /* Adjusted padding for a thinner footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; /* Ensure footer is above particles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 10px 5px 0;
+}
+
+#logo {
+    max-width: 100px; /* Adjusted maximum width for the logo */
+    margin: 5px; /* Added margin for spacing */
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0; /* Set a lower z-index for the particles */
+    background-color: #4b0082; /* Dark Purple Background */
+}
+
